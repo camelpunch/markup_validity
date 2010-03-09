@@ -1,3 +1,9 @@
+=== 1.1.1 / 2010-03-09
+
+* New Features
+
+  * Doesn't require legends in fieldsets for xhtml1-strict
+
 === 1.1.0 / 2009-08-06
 
 * New Features
