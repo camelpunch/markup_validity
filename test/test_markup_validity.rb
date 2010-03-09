@@ -97,4 +97,9 @@ class TestMarkupValidity < Test::Unit::TestCase
     assert_equal false, @fu.assertions.first.first
     assert_match('This element is not', @fu.assertions.first.last)
   end
+
+  def test_no_legend_does_not_invalidate
+    @fu.assert_xhtml_strict document_with_no_legend_in_fieldset
+    assert_equal [true, ''], @fu.assertions.first
+  end
 end

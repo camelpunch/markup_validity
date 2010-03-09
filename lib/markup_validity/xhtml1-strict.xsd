@@ -1859,7 +1859,7 @@
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence>
-        <xs:element ref="legend"/>
+        <xs:element minOccurs="0" ref="legend"/>
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:group ref="block"/>
           <xs:element ref="form"/>

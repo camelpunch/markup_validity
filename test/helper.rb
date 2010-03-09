@@ -12,6 +12,23 @@ module MarkupValidity
       eoxhtml
     end
 
+    def document_with_no_legend_in_fieldset
+      <<-eoxhtml
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>hello world</title>
+  </head>
+  <body>
+    <fieldset>
+      <ol>
+        <li>Hello</li>
+      </ol>
+    </fieldset>
+  </body>
+</html>
+      eoxhtml
+    end
+
     def invalid_document
       <<-eoxhtml
 <html xmlns="http://www.w3.org/1999/xhtml">
